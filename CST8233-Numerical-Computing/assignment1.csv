@@ -1,3 +1,4 @@
+
 name;mfr;type;calories;protein;fat;sodium;fiber;carbo;sugars;potass;vitamins;shelf;weight;cups;rating
 String;Categorical;Categorical;Int;Int;Int;Int;Float;Float;Int;Int;Int;Int;Float;Float;Float
 100% Bran;N;C;70;4;1;130;10;5;6;280;25;3;1;0.33;68.402973
@@ -38,6 +39,7 @@ Honey Nut Cheerios;G;C;110;3;1;250;1.5;11.5;10;90;25;1;1;0.75;31.072217
 Honey-comb;P;C;110;1;0;180;0;14;11;35;25;1;1;1.33;28.742414
 Just Right Crunchy  Nuggets;K;C;110;2;1;170;1;17;6;60;100;3;1;1;36.523683
 Just Right Fruit & Nut;K;C;140;3;1;170;2;20;9;95;100;3;1.3;0.75;36.471512
+
 Kix;G;C;110;2;1;260;0;21;3;40;25;2;1;1.5;39.241114
 Life;Q;C;100;4;2;150;2;12;6;95;25;2;1;0.67;45.328074
 Wheaties;G;C;100;3;1;200;3;17;3;110;25;1;1;1;51.592193
