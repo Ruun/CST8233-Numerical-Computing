@@ -13,7 +13,7 @@ class_p <- class(p)
 print(class_p)
 
 # Find the coefficients of p
-coefficients_p <- coef(p)
+coefficients_p <- coef(p)e
 print(coefficients_p)
 
 #-------------------------------------------------------
