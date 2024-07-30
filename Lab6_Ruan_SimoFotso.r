@@ -43,10 +43,11 @@ ggplot(plot_data, aes(x = t, y = y, color = factor(h), group = h)) +
        color = "Step Size (h)") +
   theme_minimal()
 
+# Load necessary library
 library(ggplot2)
 
 # Exact solution function based on the given formula
-solution <- function(t) {
+exact_solution <- function(t) {
   0.5 * exp(sin(2 * exp(-sin(t))))
 }
 
@@ -63,8 +64,24 @@ euler_method <- function(f, y0, t0, t_end, h) {
   return(data.frame(t = t_values, y = y_values))
 }
 
+# Initial conditions and parameters
+y0 <- 1.241
+t0 <- 0
+t_end <- 6
+h <- 0.5
+
+# Define the ODE function y' = -y * cos(t)
+ode_function <- function(t, y) {
+  -y * cos(t)
+}
+
+# Calculate y(t) using Euler's Method for h = 0.5
+solution_0.5 <- euler_method(ode_function, y0, t0, t_end, h)
+t_0.5 <- solution_0.5$t
+y_0.5 <- solution_0.5$y
+
 # Calculate the exact solution values for comparison
-y_exact_0.5 <- solution(t_0.5)
+y_exact_0.5 <- exact_solution(t_0.5)
 
 # Calculate absolute and relative errors
 absolute_error <- abs(y_exact_0.5 - y_0.5)
