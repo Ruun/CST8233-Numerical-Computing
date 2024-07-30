@@ -1,4 +1,4 @@
-#Ruan
+
 # Function implementing Euler's method
 euler_method <- function(f, y0, t0, t_end, h) {
   t_values <- seq(t0, t_end, by = h)
@@ -43,27 +43,6 @@ ggplot(plot_data, aes(x = t, y = y, color = factor(h), group = h)) +
        color = "Step Size (h)") +
   theme_minimal()
 
-#step 3:
-
-# Exact solution function
-#exact_solution <- function(t) {
- # 0.5 * exp(sin(2 * exp(-sin(t))))
-#}
-
-# Calculate exact values for comparison
-#t_exact <- seq(t0, t_end, by = 0.01)
-#y_exact <- exact_solution(t_exact)
-
-# Plot the exact solution
-#ggplot(data.frame(t = t_exact, y = y_exact), aes(x = t, y = y)) +
-  #geom_line(color = "black") +
-  #labs(title = "Exact Displacement y(t)",
-   #    x = "t",
-   #    y = "y(t)") +
-  #theme_minimal()
-
-# Calculate errors for h = 0.5
-# Load necessary library
 library(ggplot2)
 
 # Exact solution function based on the given formula
