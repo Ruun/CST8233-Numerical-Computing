@@ -13,7 +13,11 @@ class_p <- class(p)
 print(class_p)
 
 # Find the coefficients of p
+<<<<<<< HEAD
 coefficients_p <- coef(p)e
+=======
+coefficients_p <- coef(p)
+>>>>>>> a16747b (Add files via upload)
 print(coefficients_p)
 
 #-------------------------------------------------------
